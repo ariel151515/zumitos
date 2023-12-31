@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #EFEFEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 700px;
+    background: #fff;
+    margin: 10px; /* Añade márgenes a los lados del contenedor */
+    margin-top: -40%;
+    border-radius: 5px;
+    line-height: 170%;
+}
+
+.regalo {
+    width: 12%; /* Ancho original en dispositivos no móviles */
+    margin: 10px auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+p {
+    width: 90%;
+    margin: 10px auto;
+}
+
+span {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 684px) {
+    .contenedor {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .regalo {
+        width: 80px; /* Ancho para dispositivos móviles cuando el ancho de la pantalla es igual o inferior a 684px */
+        /* Puedes ajustar otros estilos según sea necesario */
+    }
+
+    p {
+        width: 100%;
+    }
+}
